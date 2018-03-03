@@ -1,0 +1,13 @@
+correios:
+    build: .
+    env_file:
+        - ./docker-base.env
+    ports:
+        - "5004:5004"
+    links:
+        - "mongodb:mongodb"
+
+mongodb:
+    image: mongo:latest
+    ports:
+        - 27017:27017
