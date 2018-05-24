@@ -5,7 +5,8 @@ correios.py
     Api para usar dados dos Correios
 """
 from flask import Flask, request, Response
-from flask.ext.cors import CORS, cross_origin
+# from flask.ext.cors import CORS, cross_origin
+from flask_cors import CORS, cross_origin
 import requests
 import json
 import os
